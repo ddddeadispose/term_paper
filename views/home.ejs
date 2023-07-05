@@ -1,0 +1,33 @@
+<html>
+<head>
+    <style>
+
+        * {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+            monospace;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 26px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 34px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Личная страница</h1>
+
+<b>Имя:</b>         <%= user.name %><br />
+<b>Телефон:</b>         <%= user.contactPhone %><br />
+<b>Почта:</b>         <%= user.email %><br />
+
+<a href="/api/signin/logout">Выйти</a>
+</body>
+</html>
